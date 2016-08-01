@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+	<head>
+    	<link rel="stylesheet" href="../design/style.css" />
+    </head>
+    <body>
+    <h1 style="text-align:center">SGPA Calculator</h1>
+    <div id="input">
+    	<table name="marksInput" align="center" cellspacing="10px">
+        	<tr>
+            	<td colspan="2">
+		    		Subject
+                </td>
+                
+                <td>
+                	Theory
+                </td>
+                <td>
+                	Practical
+                </td>
+           	</tr>
+            <tr>
+            	<td align="left">
+					Mathematics 
+                </td>
+                <td>:</td>
+                <td>
+        			<select id="m2" name="m2"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+         	</tr>
+            <tr>
+            	<td align="left">
+					Physics
+                </td>
+                <td>:</td>
+                <td>
+        			<select id="phyT" name="phyT"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+                <td>
+        			<select id="phyP" name="phyP"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+         	</tr>
+            <tr>
+            	<td align="left">
+					ED
+                </td>
+                <td>:</td>
+                <td>
+        			<select id="edT" name="edT"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+                <td>
+        			<select id="edP" name="edP"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+         	</tr>
+            <tr>
+            	<td align="left">
+					Electrical
+                </td>
+                <td>:</td>
+                <td>
+                    <select id="elecT" name="elecT"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+                 <td>
+                    <select id="elecP" name="elecP"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+               
+         	</tr>
+            
+            <tr>
+            	<td align="left">
+					Computer 
+                </td>
+                <td>:</td>
+                <td>
+                	<select id="csT" name="csT"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+                <td>
+                    <select id="csP" name="csP"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+         	</tr>
+            
+            <tr>
+            	<td align="left">
+					Humanities
+                </td>
+                <td>:</td>
+                <td>
+                    <select id="hum" name="hum"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+         	</tr>
+            
+            <tr>
+            	<td align="left">
+					Viva
+                </td>
+                <td>:</td>
+                <td></td>
+                <td>
+                    <select id="viva" name="viva"  onChange="update(this.id)" value="0" >
+        				<option value="10">O</option>
+           				<option value="9" >A+</option>
+          				<option value="8" >A</option>
+         				<option value="7" >B+</option>
+         				<option value="6" >B</option>
+           				<option value="5" >C</option>
+           				<option value="4" >P</option>
+           				<option value="3" >F</option>
+		        	</select>
+                </td>
+         	</tr>
+            <tr>
+            	<td colspan="4">
+                	<button class="buttonStyle2" onClick="cal()" id="calSGPA">Calculate SGPA</button>
+                </td>
+     	</table>
+   	</div>
+    
+    <script type="text/javascript">
+		function update(subject)
+		{
+			document.getElementById("calSGPA").innerHTML="Calculate SGPA";
+		}
+		function check()
+		{
+			if(document.getElementById("m2").value=="0")
+				alert(document.getElementById("m2").value);
+			return 1;
+		}
+		function cal()
+		{
+			if(check())
+			{
+				var SGPA;
+				SGPA= parseInt(document.getElementById("m2").value)*4+parseInt(document.getElementById("phyT").value)*4+parseInt(document.getElementById("phyP").value)*1+parseInt(document.getElementById("edT").value)*3+parseInt(document.getElementById("edP").value)*2+parseInt(document.getElementById("elecT").value)*4+parseInt(document.getElementById("elecP").value)*1+parseInt(document.getElementById("hum").value)*2+parseInt(document.getElementById("csT").value)*4+parseInt(document.getElementById("csP").value)*1+parseInt(document.getElementById("viva").value)*4;
+				document.getElementById("calSGPA").innerHTML="Your SGPA is : "+((SGPA/30)).toFixed(2);
+			}
+		}
+			
+	</script>
+    </body>
+</html>
